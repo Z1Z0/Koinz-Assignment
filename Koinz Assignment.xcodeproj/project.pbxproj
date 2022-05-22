@@ -13,6 +13,8 @@
 		E1073D6E283A6A1400CD6A78 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D6D283A6A1400CD6A78 /* PhotosTableViewCell.swift */; };
 		E1073D70283A6A2200CD6A78 /* Home + Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D6F283A6A2200CD6A78 /* Home + Inject.swift */; };
 		E1073D72283A6BCF00CD6A78 /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D71283A6BCF00CD6A78 /* Observable+Extensions.swift */; };
+		E1073D74283A6CE300CD6A78 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D73283A6CE300CD6A78 /* ViewModelType.swift */; };
+		E1073D76283A6D1300CD6A78 /* Application + Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D75283A6D1300CD6A78 /* Application + Injection.swift */; };
 		E1BA24392834F55C005A68C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA24382834F55C005A68C7 /* AppDelegate.swift */; };
 		E1BA243B2834F55C005A68C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA243A2834F55C005A68C7 /* SceneDelegate.swift */; };
 		E1BA24422834F55D005A68C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BA24412834F55D005A68C7 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		E1073D6D283A6A1400CD6A78 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
 		E1073D6F283A6A2200CD6A78 /* Home + Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home + Inject.swift"; sourceTree = "<group>"; };
 		E1073D71283A6BCF00CD6A78 /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
+		E1073D73283A6CE300CD6A78 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		E1073D75283A6D1300CD6A78 /* Application + Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application + Injection.swift"; sourceTree = "<group>"; };
 		E1BA24352834F55C005A68C7 /* Koinz Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koinz Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BA24382834F55C005A68C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1BA243A2834F55C005A68C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +58,6 @@
 				ADA2BCC1CCF1AB6EC67FF600 /* Pods-Koinz Assignment.debug.xcconfig */,
 				FE93E361AD6CE7749DC935F3 /* Pods-Koinz Assignment.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +92,7 @@
 		E1073D61283A691C00CD6A78 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E1073D73283A6CE300CD6A78 /* ViewModelType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -96,6 +100,7 @@
 		E1073D62283A692000CD6A78 /* Resolver */ = {
 			isa = PBXGroup;
 			children = (
+				E1073D75283A6D1300CD6A78 /* Application + Injection.swift */,
 			);
 			path = Resolver;
 			sourceTree = "<group>";
@@ -299,6 +304,8 @@
 				E1BA24392834F55C005A68C7 /* AppDelegate.swift in Sources */,
 				E1BA243B2834F55C005A68C7 /* SceneDelegate.swift in Sources */,
 				E1073D70283A6A2200CD6A78 /* Home + Inject.swift in Sources */,
+				E1073D76283A6D1300CD6A78 /* Application + Injection.swift in Sources */,
+				E1073D74283A6CE300CD6A78 /* ViewModelType.swift in Sources */,
 				E1073D72283A6BCF00CD6A78 /* Observable+Extensions.swift in Sources */,
 				E1073D6C283A6A0600CD6A78 /* PhotosTableViewModel.swift in Sources */,
 				E1073D6A283A69F100CD6A78 /* PhotosTableViewController.swift in Sources */,
