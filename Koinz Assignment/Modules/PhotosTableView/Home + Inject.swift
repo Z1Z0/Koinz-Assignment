@@ -6,3 +6,23 @@
 //
 
 import Foundation
+import Resolver
+
+extension Resolver {
+    static func registerHomeModule() {
+        register {
+            HomeNetworkImplementation()
+        }
+        .implements(PhotosNetwork.self)
+        
+        register {
+            PhotosTableViewModel()
+        }
+        
+        register {
+            PhotosTableViewController()
+        }
+        
+        
+    }
+}

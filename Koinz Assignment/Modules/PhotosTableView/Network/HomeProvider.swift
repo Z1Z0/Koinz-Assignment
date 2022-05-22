@@ -10,11 +10,11 @@ import RxSwift
 import Moya
 import RxCocoa
 
-protocol HomeNetwork: AnyObject {
+protocol PhotosNetwork: AnyObject {
     func getPhotos(page: Int) -> Observable<AllPhotos>
 }
 
-class HomeNetworkImplementation: HomeNetwork {
+class HomeNetworkImplementation: PhotosNetwork {
     private let provider = MoyaProvider<PhotosTarget>()
     
     func getPhotos(page: Int) -> Observable<AllPhotos> {
