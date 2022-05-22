@@ -11,7 +11,7 @@ import RxCocoa
 import Resolver
 
 class PhotosTableViewModel: ViewModelType {
-    @Injected private var welcomeNetwork: PhotosNetwork
+    @Injected private var photosNetwork: PhotosNetwork
     private let disposeBag = DisposeBag()
     
     struct Input {
@@ -25,7 +25,7 @@ class PhotosTableViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         let photos = input.viewDidLoadTrigger.flatMapLatest {
             
-            return self.welcomeNetwork.getPhotos(page: 1)
+            return self.photosNetwork.getPhotos(page: 1)
                 .map({$0.photos?.photo ?? []})
                 .asDriverOnErrorJustComplete()
         }.asObservable()

@@ -9,7 +9,7 @@ import Foundation
 import Resolver
 
 extension Resolver {
-    static func registerHomeModule() {
+    static func registerPhotosTableModule() {
         register {
             HomeNetworkImplementation()
         }

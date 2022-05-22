@@ -11,7 +11,7 @@
 		E1073D6A283A69F100CD6A78 /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D69283A69F100CD6A78 /* PhotosTableViewController.swift */; };
 		E1073D6C283A6A0600CD6A78 /* PhotosTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D6B283A6A0500CD6A78 /* PhotosTableViewModel.swift */; };
 		E1073D6E283A6A1400CD6A78 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D6D283A6A1400CD6A78 /* PhotosTableViewCell.swift */; };
-		E1073D70283A6A2200CD6A78 /* Home + Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D6F283A6A2200CD6A78 /* Home + Inject.swift */; };
+		E1073D70283A6A2200CD6A78 /* PhotosTable + Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D6F283A6A2200CD6A78 /* PhotosTable + Inject.swift */; };
 		E1073D72283A6BCF00CD6A78 /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D71283A6BCF00CD6A78 /* Observable+Extensions.swift */; };
 		E1073D74283A6CE300CD6A78 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D73283A6CE300CD6A78 /* ViewModelType.swift */; };
 		E1073D76283A6D1300CD6A78 /* Application + Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D75283A6D1300CD6A78 /* Application + Injection.swift */; };
@@ -19,7 +19,7 @@
 		E1073D7B283A6E0800CD6A78 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D7A283A6E0800CD6A78 /* Photos.swift */; };
 		E1073D7D283A6E1100CD6A78 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D7C283A6E1100CD6A78 /* Photo.swift */; };
 		E1073D7F283A6E6F00CD6A78 /* PhotosTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D7E283A6E6F00CD6A78 /* PhotosTarget.swift */; };
-		E1073D81283A6E7C00CD6A78 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D80283A6E7C00CD6A78 /* HomeProvider.swift */; };
+		E1073D81283A6E7C00CD6A78 /* PhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D80283A6E7C00CD6A78 /* PhotosProvider.swift */; };
 		E1073D83283A6F5400CD6A78 /* PhotosDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1073D82283A6F5400CD6A78 /* PhotosDetailsViewController.swift */; };
 		E1BA24392834F55C005A68C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA24382834F55C005A68C7 /* AppDelegate.swift */; };
 		E1BA243B2834F55C005A68C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA243A2834F55C005A68C7 /* SceneDelegate.swift */; };
@@ -33,7 +33,7 @@
 		E1073D69283A69F100CD6A78 /* PhotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
 		E1073D6B283A6A0500CD6A78 /* PhotosTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewModel.swift; sourceTree = "<group>"; };
 		E1073D6D283A6A1400CD6A78 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
-		E1073D6F283A6A2200CD6A78 /* Home + Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home + Inject.swift"; sourceTree = "<group>"; };
+		E1073D6F283A6A2200CD6A78 /* PhotosTable + Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotosTable + Inject.swift"; sourceTree = "<group>"; };
 		E1073D71283A6BCF00CD6A78 /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
 		E1073D73283A6CE300CD6A78 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		E1073D75283A6D1300CD6A78 /* Application + Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application + Injection.swift"; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		E1073D7A283A6E0800CD6A78 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		E1073D7C283A6E1100CD6A78 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		E1073D7E283A6E6F00CD6A78 /* PhotosTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTarget.swift; sourceTree = "<group>"; };
-		E1073D80283A6E7C00CD6A78 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		E1073D80283A6E7C00CD6A78 /* PhotosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosProvider.swift; sourceTree = "<group>"; };
 		E1073D82283A6F5400CD6A78 /* PhotosDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailsViewController.swift; sourceTree = "<group>"; };
 		E1BA24352834F55C005A68C7 /* Koinz Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koinz Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BA24382834F55C005A68C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				E1073D69283A69F100CD6A78 /* PhotosTableViewController.swift */,
 				E1073D6B283A6A0500CD6A78 /* PhotosTableViewModel.swift */,
 				E1073D6D283A6A1400CD6A78 /* PhotosTableViewCell.swift */,
-				E1073D6F283A6A2200CD6A78 /* Home + Inject.swift */,
+				E1073D6F283A6A2200CD6A78 /* PhotosTable + Inject.swift */,
 			);
 			path = PhotosTableView;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			children = (
 				E1073D77283A6DF100CD6A78 /* Models */,
 				E1073D7E283A6E6F00CD6A78 /* PhotosTarget.swift */,
-				E1073D80283A6E7C00CD6A78 /* HomeProvider.swift */,
+				E1073D80283A6E7C00CD6A78 /* PhotosProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -332,8 +332,8 @@
 				E1073D83283A6F5400CD6A78 /* PhotosDetailsViewController.swift in Sources */,
 				E1BA243B2834F55C005A68C7 /* SceneDelegate.swift in Sources */,
 				E1073D7F283A6E6F00CD6A78 /* PhotosTarget.swift in Sources */,
-				E1073D81283A6E7C00CD6A78 /* HomeProvider.swift in Sources */,
-				E1073D70283A6A2200CD6A78 /* Home + Inject.swift in Sources */,
+				E1073D81283A6E7C00CD6A78 /* PhotosProvider.swift in Sources */,
+				E1073D70283A6A2200CD6A78 /* PhotosTable + Inject.swift in Sources */,
 				E1073D79283A6DFE00CD6A78 /* AllPhotos.swift in Sources */,
 				E1073D7B283A6E0800CD6A78 /* Photos.swift in Sources */,
 				E1073D76283A6D1300CD6A78 /* Application + Injection.swift in Sources */,

@@ -13,7 +13,7 @@ import Resolver
 class PhotosTableViewController: UIViewController {
 
     let disposeBag = DisposeBag()
-    @Injected var viewModel: PhotosNetwork
+    @Injected var viewModel: PhotosTableViewModel
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +80,7 @@ class PhotosTableViewController: UIViewController {
             .mapToVoid()
             .asDriverOnErrorJustComplete()
 
-        let input = WelcomeViewModel.Input(viewDidLoadTrigger: Driver.merge(viewDidLoad))
+        let input = PhotosTableViewModel.Input(viewDidLoadTrigger: Driver.merge(viewDidLoad))
 
         let output = viewModel.transform(input: input)
         
@@ -94,7 +94,7 @@ class PhotosTableViewController: UIViewController {
 
 }
 
-extension WelcomeViewController: UITableViewDelegate {
+extension PhotosTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.bounds.height / 3
     }
