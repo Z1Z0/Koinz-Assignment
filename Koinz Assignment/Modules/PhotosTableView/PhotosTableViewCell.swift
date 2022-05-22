@@ -62,7 +62,7 @@ class PhotosTableViewCell: UITableViewCell {
     private var photoTitle: UILabel = {
         let title = UILabel()
         title.numberOfLines = 0
-        title.font = .avenirMedium()
+        title.font = UIFont(name: "AvenirNext-Medium", size: 16)!
         title.translatesAutoresizingMaskIntoConstraints = false
         return title
     }()

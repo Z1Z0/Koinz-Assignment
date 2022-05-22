@@ -20,22 +20,7 @@ class PhotosTableViewController: UIViewController {
         // Do any additional setup after loading the view.
         layoutUI()
         bindPhotos()
-        
-        
-        photosTableView.rx
-            .modelSelected(Photo.self)
-            .subscribe { [weak self] photos in
-                guard let self = self else {return}
-                photos.map { photo in
-                    if let farm = photo.farm, let server = photo.server, let id = photo.id, let secret = photo.secret {
-                        self.show(HomeViewController(farm: farm, server: server, id: id, secret: secret), sender: nil)
-                    }
-                    
-                }
-                
-            }
-            .disposed(by: disposeBag)
-
+        selectedCell()
     }
     
     private lazy var photosTableView: UITableView = {
@@ -75,6 +60,7 @@ class PhotosTableViewController: UIViewController {
         addSubviews()
         addConstraints()
     }
+    
     private func bindPhotos() {
         let viewDidLoad = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
             .mapToVoid()
@@ -91,7 +77,20 @@ class PhotosTableViewController: UIViewController {
         }
         .disposed(by: disposeBag)
     }
-
+    
+    private func selectedCell() {
+        photosTableView.rx
+            .modelSelected(Photo.self)
+            .subscribe { [weak self] photos in
+                guard let self = self else {return}
+                photos.map { photo in
+                    if let farm = photo.farm, let server = photo.server, let id = photo.id, let secret = photo.secret {
+                        self.show(PhotosDetailsViewController(farm: farm, server: server, id: id, secret: secret), sender: nil)
+                    }
+                }
+            }
+            .disposed(by: disposeBag)
+    }
 }
 
 extension PhotosTableViewController: UITableViewDelegate {

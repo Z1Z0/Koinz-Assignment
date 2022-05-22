@@ -11,7 +11,7 @@ import Resolver
 extension Resolver {
     static func registerPhotosTableModule() {
         register {
-            HomeNetworkImplementation()
+            PhotosNetworkImplementation()
         }
         .implements(PhotosNetwork.self)
         

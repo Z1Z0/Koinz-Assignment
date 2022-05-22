@@ -14,7 +14,7 @@ protocol PhotosNetwork: AnyObject {
     func getPhotos(page: Int) -> Observable<AllPhotos>
 }
 
-class HomeNetworkImplementation: PhotosNetwork {
+class PhotosNetworkImplementation: PhotosNetwork {
     private let provider = MoyaProvider<PhotosTarget>()
     
     func getPhotos(page: Int) -> Observable<AllPhotos> {
